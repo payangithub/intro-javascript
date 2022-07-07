@@ -54,3 +54,12 @@ if(velocidad >=30 && altura >=175 && edad >18){
     console.log('No puedes ingresar al equipo');
 }
 */
+
+/*
+//Puedes ingresar al equipo de menores. OPERARDOR CONDICIONAL TERNARIO.
+let manejando = confirm('Esta manejando?')
+let bebida = manejando ? 'Limonada':'Cerveza';
+let edad = 19
+let res=
+*/
+
