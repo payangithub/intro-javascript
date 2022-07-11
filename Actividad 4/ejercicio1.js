@@ -1,0 +1,1 @@
+//Leer el capitilo 2 del libro Eloquent JavaScript: Estructura del Programa.
