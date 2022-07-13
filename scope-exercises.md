@@ -16,7 +16,7 @@
   ```
 
 > error
-> undefined
+> undefined y 2
 
 
 
