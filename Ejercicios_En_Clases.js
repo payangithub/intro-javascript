@@ -19,7 +19,7 @@ for(let i=0; i<estudiantes.length;i++)
 
 //estructura function declaration
 
-function nombreFunction(parametro1, parametro2, ...) {
+/* function nombreFunction(parametro1, parametro2, ...) {
     //body de la funcion
     return resultado     
 }
@@ -54,3 +54,47 @@ let sumNumbers =(a,b)=>{
     return sum/2
 }
 
+ */
+
+//objetos:
+
+//declarar un objeto literal 
+
+const obj ={
+    color: 'verde',
+    edad: 2,
+    peso: 5,
+    'nombre-planta': 'monstera'
+}
+
+//acceder a las prop del obj -notacion de punto
+console.log(obj.edad);
+
+//corchetes 
+console.log(obj['nombre-planta']);
+
+//modificar el valor de una prop
+obj.edad =3;
+console.log(obj);
+    
+//agregar nueva prop
+obj['pais-origen'] = 'Mexico';
+console.log(obj);
+
+//borrar una propiedad
+delete obj.edad;
+console.log(obj);
+
+//define properties
+const car ={}
+
+Object.defineProperties(car,{
+    color:  {
+        enumerable: true,
+        value: 'white',
+        writable: true,
+        configurable: true
+    },
+    //Faltan mas propiedades 
+    //...............
+})
