@@ -58,7 +58,7 @@ let sumNumbers =(a,b)=>{
 
 //objetos:
 
-//declarar un objeto literal 
+/* //declarar un objeto literal 
 
 const obj ={
     color: 'verde',
@@ -89,12 +89,148 @@ console.log(obj);
 const car ={}
 
 Object.defineProperties(car,{
-    color:  {
-        enumerable: true,
+    color:  {        
         value: 'white',
         writable: true,
+        enumerable: true,        
         configurable: true
     },
     //Faltan mas propiedades 
     //...............
-})
+}) */
+
+
+//crear un arreglo de objetos 
+const transformers =[
+    {
+        name:'Optimus Prime',
+        team: 'Autobot',
+        form: 'Trailer'
+    },
+    {
+        name: 'Bumblebee',
+        team: 'Autobot',
+        form: 'Camaro'
+    },
+    {
+        name: 'Megatron',
+        team: 'Decepticon',
+        form: 'Jet'
+    }
+]
+
+/* //Obtener los nombres de cada uno de los transformers:
+function getNames(arr){
+    const names=[];
+    for(let i=0;i<arr.length;i++){
+        names.push(arr[i].name);
+    }
+    return names;
+}
+
+console.log(getNames(transformers)); */
+
+/* //map: retorna un nuevo arreglo
+const names = transformers.map((transformers) => transformers.name);
+console.log(names); */
+
+//filter: obtener los trasformers que son decepticons
+function getTeam(arr) {
+    const team = [];
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i].team=='Decepticon'){
+            team.push(arr[i]);
+        }
+        
+    }
+    return team;
+}
+
+console.log(getTeam(transformers));
+
+//filter:
+PENDIENTE 
+
+
+
+//Ejemplo de for..in
+    const obj={
+        a:1,
+        b:2,
+        c:3,
+        d:4
+    };
+
+    for(const key in obj){
+        console.log(obj[key])
+    }
+    //Result:
+    /*
+        1
+        2
+        3
+        4 
+    */
+
+//Ejemplo for..of (Sirve solo para Array y String)
+    const array =['a','b','c','d'];
+    for(const item of array){
+        console.log(item);
+    }
+    //Result:
+    /* 
+        a
+        b
+        c
+        d
+    */
+
+//Ejemplo for..of (Sirve solo para Array y String)
+    const string = 'Ire Aderinokun';
+    for (const character of string) {
+        console.log(character);
+    }
+    //Result:
+    /*
+        I
+        r
+        e
+        
+        A
+        d
+        e
+        r
+        i
+        n
+        o
+        k
+        u
+        n
+    */        
+
+//Ejemplo forEach() <<Este es para arreglos>>
+//Converting a for loop to forEach.
+    const items = ['item1', 'item2', 'item3'];
+    const copyItems =[];
+
+    //before 
+    for (let i = 0; i < items.length; i++) {
+        copyItems.push(items[i]);    
+    }
+    console.log(copyItems);
+    //Result: ['item1', 'item2', 'item3']
+
+    //after 
+    items.forEach((item)=>{
+        copyItems.push(item);
+    });
+    console.log(copyItems);
+    //Result: ['item1', 'item2', 'item3']
+
+//Ejemplo:  Map (Realiza Modificaciones, da variantes al arreglo original, lo devuelve a otro arreglo).
+
+
+//Ejemplo: Filter(Hace criterios de busqueda y lo retorna en una copia de arreglo con el resultado).
+
+//Ejemplo: Reduce(Da un resultado acumulado, reduce a un solo elemento de un conjunto de ellos, sirve para sumar los
+//         elementos de un arreglo).
