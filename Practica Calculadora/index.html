@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practica Calculadora Payan</title>
+        <!-- Se referencia el archivo de estilos. -->
+        <link type="text/css" href="estilo.css" rel="stylesheet">    
+        <!-- Se referencia el archivo de javaScript que contiene toda la funcionalidad de la calculadora -->
+        <script src="./operaciones.js"></script>
+    </head>
+
+    <!-- Se carga la funcionalidad de cada tecla  -->
+    <body onload="cargaFuncionalidad();"> 
+        <table class="calculadora">
+            <tr>
+                <td colspan="4"><span id="btn_resultado"></span></td>
+            </tr>
+            <tr>
+                <td><button id="btn_siete">7</button></td>
+                <td><button id="btn_ocho">8</button></td>
+                <td><button id="btn_nueve">9</button></td>
+                <td><button id="btn_division">/</button></td>
+            </tr>
+            <tr>
+                <td><button id="btn_cuatro">4</button></td>
+                <td><button id="btn_cinco">5</button></td>
+                <td><button id="btn_seis">6</button></td>
+                <td><button id="btn_resta">-</button></td>                
+            </tr>
+            <tr>
+                <td><button id="btn_uno">1</button></td>
+                <td><button id="btn_dos">2</button></td>
+                <td><button id="btn_tres">3</button></td>                
+                <td><button id="btn_suma">+</button></td>            
+            </tr>
+            <tr>            
+                <td><button id="btn_reset">AC</button></td>
+                <td><button id="btn_cero">0</button></td>
+                <td><button id="btn_igual">=</button></td>                                        
+                <td><button id="btn_multiplicacion">*</button></td>
+            </tr>        
+        </table>                
+    </body>
+</html>
