@@ -1,25 +1,25 @@
-/* let estudiantes =['Cesar','Alejandra','Claudia','Edgar'];
+let estudiantes =['Cesar','Alejandra','Claudia','Edgar'];
 estudiantes[1] = 'Mario';
 estudiantes[6] = 'Jared';
 //console.log(estudiantes[6])
-console.log(estudiantes) */
+console.log(estudiantes) 
 
 
 //Necesitamos imprimir en una lista numerada todos los estudiantes. ITERANDO EN EL ARRAY
 
-/* let estudiantes = ['Cesar', 'Alejandra', 'Claudia', 'Edgar'];
+let estudiantes = ['Cesar', 'Alejandra', 'Claudia', 'Edgar'];
 let frutas = ['Pera','Manzana','Fresa'];
 
 for(let i=0; i<estudiantes.length;i++)
 {
     console.log(`${i+1}-${estudiantes[i]}`);
-} */
+} 
 
 //**************Funciones 
 
 //estructura function declaration
 
-/* function nombreFunction(parametro1, parametro2, ...) {
+function nombreFunction(parametro1, parametro2, ...) {
     //body de la funcion
     return resultado     
 }
@@ -54,12 +54,10 @@ let sumNumbers =(a,b)=>{
     return sum/2
 }
 
- */
 
 //objetos:
 
-/* //declarar un objeto literal 
-
+//declarar un objeto literal 
 const obj ={
     color: 'verde',
     edad: 2,
@@ -97,8 +95,7 @@ Object.defineProperties(car,{
     },
     //Faltan mas propiedades 
     //...............
-}) */
-
+}) 
 
 //crear un arreglo de objetos 
 const transformers =[
@@ -128,9 +125,9 @@ function getNames(arr){
     return names;
 }
 
-console.log(getNames(transformers)); */
+console.log(getNames(transformers)); 
 
-/* //map: retorna un nuevo arreglo
+//map: retorna un nuevo arreglo
 const names = transformers.map((transformers) => transformers.name);
 console.log(names); */
 
@@ -140,8 +137,7 @@ function getTeam(arr) {
     for (let i = 0; i < arr.length; i++) {
         if(arr[i].team=='Decepticon'){
             team.push(arr[i]);
-        }
-        
+        }        
     }
     return team;
 }
